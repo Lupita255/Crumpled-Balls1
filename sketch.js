@@ -17,9 +17,9 @@ function setup() {
 
   //Create the Bodies Here.
   paper = new Paper(150, 200, 50, 50);
-  dustBin1 = new DustBin(495, 550, 20, 200);
-  dustBin2 = new DustBin(605, 640, 200, 20);
-  dustBin3 = new DustBin(705, 550, 20, 200);
+  bin1 = new Bin(495, 550, 20, 200);
+  bin2 = new Bin(605, 640, 200, 20);
+  bin3 = new Bin(705, 550, 20, 200);
   ground = new Ground(400, height, 800, 100);
 
   Engine.run(engine);
@@ -32,9 +32,9 @@ function draw() {
   Engine.update(engine);
 	
   paper.display();
-  dustBin1.display();
-  dustBin2.display();
-  dustBin3.display();
+  bin1.display();
+  bin2.display();
+  bin3.display();
   ground.display();
 	
   keyPressed();
