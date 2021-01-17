@@ -20,7 +20,7 @@ function setup() {
   bin1 = new Bin(495, 550, 20, 200);
   bin2 = new Bin(605, 640, 200, 20);
   bin3 = new Bin(705, 550, 20, 200);
-  ground = new Ground(400, height, 800, 100);
+  ground = new Ground(400, 15, 800, 100);
 
   Engine.run(engine);
 }
