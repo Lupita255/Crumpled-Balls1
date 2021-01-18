@@ -16,11 +16,13 @@ function setup() {
   world = engine.world;
 
   //Create the Bodies Here.
-  paper = new Paper(150, 200, 50, 50);
-  bin1 = new Bin(495, 550, 20, 200);
-  bin2 = new Bin(605, 640, 200, 20);
-  bin3 = new Bin(705, 550, 20, 200);
-  ground = new Ground(400, 15, 800, 100);
+ paper = new Paper(150,200,50,50);
+
+ bin1 = new Bin(840,660,230,20);
+ bin2 = new Bin(715,605,20,130);
+ bin3 = new Bin(965,605,20,130);
+
+ ground = new Ground(500,680,1200,20);
 
   Engine.run(engine);
 }
@@ -43,6 +45,6 @@ function draw() {
 }
 function keyPressed() {
   if (keyCode === UP_ARROW) {
-    Matter.Body.applyForce(paper.body, paper.body.position, { x: 20, y: -10 });
+    Matter.Body.applyForce(paper.body, paper.body.position, { x: 6, y: -6 });
   }
 }
