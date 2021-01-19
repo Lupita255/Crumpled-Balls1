@@ -4,7 +4,7 @@ const World = Matter.World;
 const Bodies = Matter.Bodies;
 const Body = Matter.Body;
 var ground;
-var papers;
+var paper;
 var bin1, bin2, bin3;
 var bin, binImg;
 
